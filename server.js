@@ -9,7 +9,7 @@ const mapRoutes = require('./routes/mapRoutes');
 
 const app = express();
 app.use(cors({ 
-    origin: 'http://localhost:3000',
+    origin:  'https://syncthreads-fullstack.vercel.app/' || 'http://localhost:3000',
     methods: ['GET', 'POST'], // Specify allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'] // Specify allowed headers
 }));connectDB();
